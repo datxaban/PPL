@@ -3,43 +3,40 @@
 # Contents
 1. [Introduction](#section1)
 2. [2 Program Structure](#section2)
-    1. [Variable declaration](#subsection2.1)
-    2. [Function declaration](#subsection2.2)
+    -2.1. [Variable declaration](#subsection2.1)
+    -2.2. [Function declaration](#subsection2.2)
 3. [Lexical Specification](#section3)
-   1. [Character Set](#subsection3.1)
-   2. [Comments](#subsection3.2)
-   3. [Token Set](#subsection3.3)
-   4. [Separators](#subsection3.4)
-   5. [Literals](#subsection3.5)
+   - 3.1. [Character Set](#subsection3.1)
+   - 3.2. [Comments](#subsection3.2)
+   - 3.3. [Token Set](#subsection3.3)
+   - 3.4. [Separators](#subsection3.4)
+   - 3.5. [Literals](#subsection3.5)
 4. [Types and Values](#section4)
-   1. [The void Type and Values](#subsection4.1)
-   2. [The boolean Type and Values](#subsection4.2)
-   3. [The int Type and Values](#subsection4.3)
-   4. [The float Type and Values](#subsection4.4)
-   5. [The string Type and Values](#subsection4.5)
-   6. [Array Types and Their Values](#subsection4.6)
-   7. [Array Pointer Type](#subsection4.7)
+   - 4.1. [The void Type and Values](#subsection4.1)
+   - 4.2. [The boolean Type and Values](#subsection4.2)
+   - 4.3. [The int Type and Values](#subsection4.3)
+   - 4.4. [The float Type and Values](#subsection4.4)
+   - 4.5. [The string Type and Values](#subsection4.5)
+   - 4.6. [Array Types and Their Values](#subsection4.6)
+   - 4.7. [Array Pointer Type](#subsection4.7)
 5. [Variables](#section5)
-  1. [Global Variables](#section5.1)
-  2. [Local Variables](#section5.2)
-6. [Expressions](#section7)
-  1. [The if Statement](#subsection7.1)
-  2. [The do while Statement](#subsection7.2)
-  3. [The for Statement](#subsection7.3)
-  4. [The break Statement](#subsection7.4)
-  5. [The continue Statement](#subsection7.5)
-  6. [The return Statement](#subsection7.6)
-  7. [The expression Statement](#subsection7.7)
-  8. [The block State](#subsection7.8)
+      - 5.1. [Global Variables](#subsection5.1)
+      - 5.2. [Local Variables](#subsection5.2)
+6. [Expressions](#section6)
+      - 6.1. [Precedence and Associativity](#subsection6.1)
+      - 6.2. [Type Coerciont](#subsection6.2)
+      - 6.3. [Index Expression](#subsection6.3)
+      - 6.4. [Invocation Expression](#subsection6.4)
+      - 6.5. [Evaluation Order](#subsection6.5)
 7. [Statements and Control Flow](#section7)
-  1. [The if Statement](#subsection7.1)
-  2. [The do while Statement](#subsection7.2)
-  3. [The for Statement](#subsection7.3)
-  4. [The break Statement](#subsection7.4)
-  5. [The continue Statement](#subsection7.5)
-  6. [The return Statement](#subsection7.6)
-  7. [The expression Statement](#subsection7.7)
-  8. [The block Statement](#subsection7.8)
+      - 7.1. [The if Statement](#subsection7.1)
+      - 7.2. [The do while Statement](#subsection7.2)
+      - 7.3. [The for Statement](#subsection7.3)
+      - 7.4. [The break Statement](#subsection7.4)
+      - 7.5. [The continue Statement](#subsection7.5)
+      - 7.6. [The return Statement](#subsection7.6)
+      - 7.7. [The expression Statement](#subsection7.7)
+      - 7.8. [The block Statement](#subsection7.8)
 8. [Built-in Functions](#section8)
 9. [Scope Rules](#section9)
 10. [The main function](#section10)
@@ -68,67 +65,68 @@ int i[5]; //CORRECT
 ```
 Conventionally, the sequence ’\n’ must be used as a new line character in MC.
 
-## Program Structure <a name="section2"></a>
+## 2. Program Structure <a name="section2"></a>
 MC does not support separate compilation so all declarations (variable and function) must be resided in one single file.
 
 An MC program consists of many declarations which include variable declarations and function declarations.
 
-### Variable declaration
+### Variable declaration <a name="subsection2.1"></a>
 - Not support variable initialization
 - Array size must be known during declaration.
 - Syntax: There are two types of variable declaration:
   - <primitive type> <variable> ’;’
   - where a <primitive type> is a primitive type which is described in Section 4; a <variable> can be an identifier alone or an identifier followed by a ‘[‘, an integer literal, and then a ‘]’.
 For example: int i; float j[5];
-### Function declaration
+### Function declaration <a name="subsection2.2"></a>
 
 
 
-## Lexical Specigication <a name="section3"></a>
+## 3. Lexical Specigication <a name="section3"></a>
 The second paragraph text
 
-### Character Set
-### Comments
-### Token Set
-### Separators
-### Literals
+### 3.1 Character Set <a name="subsection3.1"></a>
+### 3.2 Comments <a name="subsection3.2"></a>
+### 3.3 Token Set <a name="subsection3.3"></a>
+### 3.4 Separators <a name="subsection3.4"></a>
+### 3.5 Literals <a name="subsection3.5"></a>
 
-## Types and Values <a name="section4"></a>
+## 4. Types and Values <a name="section4"></a>
 
-### The void Type and Values
-### The boolean Type and Values
-### The int Type and Values
-### The float Type and Values
-### The string Type and Values
-### Array Types and Their valeus
-### Array Pointer Type
+### 4.1 The void Type and Values <a name="subsection4.1"></a> 
+### 4.2 The boolean Type and Values <a name="subsection4.2"></a>
+### 4.3 The int Type and Values <a name="subsection4.3"></a>
+### 4.4 The float Type and Values <a name="subsection4.4"></a>
+### 4.5 The string Type and Values <a name="subsection4.5"></a>
+### 4.6 Array Types and Their valeus <a name="subsection4.6"></a>
+### 4.7 Array Pointer Type <a name="subsection4.7"></a>
 
-## Variables <a name="section5"></a>
+## 5. Variables <a name="section5"></a>
 
-### 5.1 Global Variables
-### 5.2 Local Variables
+### 5.1 Global Variables <a name="subsection5.1"></a>
+### 5.2 Local Variables <a name="subsection5.2"></a>
 
 
-## Expression <a name="section6"></a>
+## 6. Expression <a name="section6"></a>
 
-### 6.1 Precedence and Associativity
-### 6.2 Type Coercions
-### 6.3 Index Pression
-### 6.4 Invocation Expression
-### 6.5 Evaluation Order
+### 6.1 Precedence and Associativity <a name="subsection6.1"></a>
+### 6.2 Type Coercions <a name="subsection6.2"></a>
+### 6.3 Index Pression <a name="subsection6.3"></a>
+### 6.4 Invocation Expression <a name="subsection6.4"></a>
+### 6.5 Evaluation Order <a name="subsection6.5"></a>
 
 
 ## 7. Statements and Control Flow <a name="section7></a>
+
 MC supports these statements: if, for, do. . . while, break, continue, return, expression, and block. All statements except if, for and the block one must be followed by a semi-colon.
 
-### The if Statement
-### The do while Statement
-### The for Statement
-### The break Statement
-### The continue Statement
-### The return Statement
-### The expression Statement
-### The block statement
+### 7.1 The if Statement <a name="subsection7.1"></a>
+### 7.2 The do while Statement <a name="subsection7.2"></a>
+### 7.3 The for Statement <a name="subsection7.3"></a>
+### 7.4The break Statement <a name="subsection7.4"></a>
+### 7.5 The continue Statement <a name="subsection7.5"></a>
+### 7.6 The return Statement <a name="subsection7.6"></a>
+### 7.7 The expression Statement <a name="subsection7.7"></a>
+### 7.8 The block statement <a name="subsection7.8"></a>
 
 ## 8.Built-in Functions <a name="section8"></a>
 MC has some following built-in functions:
